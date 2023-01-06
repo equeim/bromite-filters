@@ -36,6 +36,7 @@ wget https://github.com/bromite/bromite/releases/latest/download/ruleset_convert
 #join_by , "${!FILTERS[@]}"
 
 echo "Converting filters"
+chmod +x ruleset_converter
 ./ruleset_converter --input_format=filter-list \
                     --output_format=unindexed-ruleset \
                     --input_files="$(join_by , "${!FILTERS[@]}")" \
