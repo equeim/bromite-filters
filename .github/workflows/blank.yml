@@ -28,7 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run update-filters
         run: |
-          chmod +x update update.sh
+          chmod +x update.sh
           ./update.sh
 
       # Runs a set of commands using the runners shell
