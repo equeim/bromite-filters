@@ -27,6 +27,12 @@ for filter in "${!FILTERS[@]}"; do
     echo
 done
 
+#download ruleset_converter 
+
+wget https://github.com/bromite/bromite/releases/latest/download/ruleset_converter
+
+
+
 #join_by , "${!FILTERS[@]}"
 
 echo "Converting filters"
